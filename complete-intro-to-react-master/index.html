@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>svideo</title>
+    <link rel="stylesheet" href="/public/style.css" />
+</head>
+
+<body>
+    <div id="app"><%= body %></div>
+    <script src="node_modules/react/dist/react.js"></script>
+    <script src="node_modules/react-dom/dist/react-dom.js"></script>
+    <script>
+      const ce = React.createElement;
+
+      const MyTitle = function(props){
+        return React.createElement('div', null,
+          React.createElement('h1', { style: {color: props.color} }, props.title)
+        )
+      }
+
+      const MyFirstComponent = function() {
+        return React.createElement('div', {id: 'my-first-component' },
+
+          React.createElement(MyTitle, {title: 'Game of Thrones', color: 'DodgerBlue'}),
+          React.createElement(MyTitle, {title: 'lightgoldenrodyellow', color: 'lightgoldenrodyellow'}),
+          React.createElement(MyTitle, {title: 'palegoldenrod', color: 'palegoldenrodyellow'}),
+          React.createElement(MyTitle, {title: 'goldenrod', color: 'goldenrod'}),
+          React.createElement(MyTitle, {title: 'lightgoldenrod', color: 'lightgoldenrod'}),
+          React.createElement(MyTitle, {title: 'darkgoldenrod', color: 'darkgoldenrod'}),
+          React.createElement(MyTitle, {title: 'chartreuse', color: 'chartreuse'}),
+          React.createElement(MyTitle, {title: 'deepskyblue', color: 'deepskyblue'}),
+          React.createElement(MyTitle, {title: 'burleywood', color: 'burlywood'}),
+          React.createElement(MyTitle, {title: 'gainsboro', color: 'gainsboro'}),
+          React.createElement(MyTitle, {title: 'dimgrey', color: 'dimgrey'}),
+          React.createElement(MyTitle, {title: 'flesh', color: 'flesh'}),
+          React.createElement(MyTitle, {title: 'mistyrose', color: 'mistyrose'}),
+          React.createElement(MyTitle, {title: 'brick', color: 'brick'}),
+          React.createElement(MyTitle, {title: 'firebrick', color: 'firebrick'}),
+          React.createElement(MyTitle, {title: 'mediumspringgreen', color: 'mediumspringgreen'})
+        )
+      }
+
+      ReactDOM.render(
+        React.createElement(MyFirstComponent),
+        document.getElementById('app')
+      )
+    </script>
+    <!-- <script src="/public/bundle.js"></script> -->
+</body>
+</html>

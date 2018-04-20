@@ -1,0 +1,83 @@
+#canvas {
+  border: 2px solid red;
+  width: 60%;
+}
+
+
+
+/* =========================
+           BUTTONS
+   ========================= */
+/*Basic button with hover and onClick states*/
+.btn {
+  border-radius: 2px;
+  font-size: 0.9rem;
+  padding: 6px 12px;
+  box-shadow: inset 0 1px 0 0 #4d73bf;
+  background: #4267b2;
+  border: solid 1px #4267b2;
+  color: white;
+  text-shadow: 0 1px 0 #3359a5;
+}
+
+  .btn:hover {
+    background: #2b54a7;
+  }
+  .btn:active {
+    background: #1d4698;
+    border-color: #1d4698;
+  }
+
+/*Checkbox slider - a checkbox input + span tag */
+
+/* The slide group */
+.slide {
+  font-family: Helvetica, Arial, sans-serif;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 15px 0 0;
+}
+/* The checkbox  - hidden */
+.slide-checkbox {
+  display: none;
+}
+/* The span tag - the switch background when not checked */
+.slide-span {
+  postion: relative;
+  display: inline-block;
+  font-size: 1rem;
+  line-height: 1.4rem;
+  text-transform: uppercase;
+  background-color: #f2395a;
+  border: solid 1px #f2395a;
+  color: white;
+  width: 80px;
+  height: 30px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+  /*The switch overlay when not checked */
+  .slide-span::before {
+    position: relative;
+    top: 5px;
+    left: 40px;
+    content: "off";
+    display: inline-block;
+    height: 20px;
+    padding: 0 3px;
+    background: white;
+    color: #f2395a;
+    transition: all 0.3s ease;
+  }
+  /*The switch background when checked */
+  .slide-checkbox:checked + .slide-span {
+    background-color: #00b3b4;
+    border: solid 1px #44a3a4;
+    box-shadow: inset 0 1px 0 0 #4d73bf;
+  }
+  /*The switch overlay when checked */
+  .slide-checkbox:checked + .slide-span::before {
+    left: 5px;
+    content: "on";
+    color: #00b3b4;
+  }

@@ -1,0 +1,43 @@
+/* ========================================
+
+    CODE YOUR STYLES BELOW!
+
+   ====================================== */
+
+ .shadow-typo {
+   font-family: Helvetica, Arial, sans-serif;
+   position: relative;
+   display: inline-block;
+   font-size: 5rem;
+   text-transform: uppercase;
+   color: #00b4b3;
+   line-height: 4.5rem;
+   text-shadow: 0.2rem 0.2rem 0.1rem hsla(360, 100%, 100%, 0.5),
+   0.5rem 0.5rem 0.1rem hsla(360, 0%, 0%, 0.1);
+ }
+
+ .threedee-typo {
+   font-size: 5rem;
+   text-transform: uppercase;
+   color: #f2395a;
+   transition: all 0.3s ease;
+   line-height: 6rem;
+ }
+
+ .threedee-typo:hover {
+   font-size: 5.5rem;
+   text-shadow: -1px -1px 0.5px darkred,
+                1px 1px 0.5px darkred,
+                1px 1px 2px darkorange,
+                2px 2px 2px orange,
+                3px 3px 2px yellow,
+                4px 4px 2px yellowgreen,
+                5px 5px 2px green,
+                5.5px 5.5px 2px darkgreen,
+                6px 6px 2px aqua,
+                7px 7px 2px dodgerblue,
+                8px 8px 2px blue,
+                9px 9px 2px darkblue,
+                10px 10px 2px purple,
+                11px 11px 2px violet;
+ }

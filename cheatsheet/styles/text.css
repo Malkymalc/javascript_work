@@ -1,0 +1,64 @@
+/* =========================
+           SPAN STYLES
+   ========================= */
+
+/* ======= VARIANTS ========= */
+
+.upcase { text-transform: uppercase; }
+.downcase { text-transform:lowercase; }
+.cap { text-transform: capitalize; }
+
+.indent {text-indent: 20% each-line; }
+
+.left { text-align: left; }
+.right { text-align: right; }
+.center { text-align: center; }
+.justify { text-align: justify; }
+
+.last-justify { text-align-last: justify; }
+.last-right { text-align-last: right; }
+.last-center { text-align-last: center; }
+
+p .drop-cap:first-letter{
+    display:block;
+    float:left;
+    margin:3px;
+    color:#f00;
+    font-size:300%;
+}
+
+/* ======= READ MORE ========= */
+
+p .read-more::after {
+  content: "Read More..."
+  color: red;
+}
+
+p .read-more::after {
+  content: "Read More..."
+  color: red;
+}
+
+/* ======= COLORS ========= */
+
+span .hl-yellow {
+  color: hsla(60, 100%, 60%, 1.0);
+}
+span .hl-green {
+  color: hsla(120, 100%, 60%, 1.0);
+}
+span .hl-blue {
+  color: hsla(220, 100%, 55%, 1.0);
+}
+span .hl-purple {
+  color: hsla(270, 100%, 55%, 1.0);
+}
+span .hl-pink {
+  color: hsla(300, 100%, 55%, 1.0);
+}
+span .hl-red {
+  color: hsla(360, 100%, 50%, 1.0);
+}
+span .hl-orange {
+  color: hsla(15, 100%, 60%, 1.0);
+}

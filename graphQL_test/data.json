@@ -1,0 +1,40 @@
+{
+  "customers": [
+    {
+      "id": "1",
+      "name": "Johm Doe",
+      "email": "bob@bobmail.com",
+      "age": 35
+    },
+    {
+      "id": "2",
+      "name": "Alice",
+      "email": "john@bobmail.com",
+      "age": 37
+    },
+    {
+      "id": "4",
+      "name": "Jill Doe",
+      "email": "jill@bobmail.com",
+      "age": 41
+    },
+    {
+      "id": "5",
+      "name": "JoJo Doe",
+      "email": "jojo@bobmail.com",
+      "age": 43
+    },
+    {
+      "name": "bob",
+      "email": "bobbob@bobmail.com",
+      "age": 16,
+      "id": "6KGSIO5"
+    },
+    {
+      "name": "bob",
+      "email": "bobbob@bobmail.com",
+      "age": 23,
+      "id": "SG2g8ay"
+    }
+  ]
+}

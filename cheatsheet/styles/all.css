@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: hsl(360, 0%, 75%);
+  color: hsl(360, 0%, 25%);
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.2;
+  text-align: center;
+}
+
+ /* ===== Container Divs ===== */
+
+.full-height {
+  height: 98vh;
+}
+
+.big-height {
+  height: 85vh;
+}
+
+/*Apply this class to a div which is a direct decendent of element to have background image. Set url*/
+.background-image {
+  position: absolute;
+  background: hsl(360, 0%, 20%) url('image.url');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.5;
+}
+/*Use with background image to allow other child elements
+to be styled seperately*/
+.content-wrap {
+  padding: 0 1.5rem;
+}
+
+
+.inverse {
+  background-color: hsl(360, 0%, 25%);
+  color: hsl(360, 0%, 75%);
+}
+  .inverse + * {
+    color: hsl(360, 0%, 75%);
+  }
+
+
+a {
+  color: hsl(206.1, 79.3%, 52.7%);
+  text-decoration: none;
+  padding: inherit, 1rem;
+}
+  a:hover, a[href^=tel]:hover {
+    color: hsl(360, 0%, 20%);
+  }
+  a:active {
+    color: hsl(360, 0%, 15%);
+  }
+
+a[href^=tel]:hover {
+  color: hsl(220, 100%, 100%);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 1rem, 0;
+  font-family: helvetica, arial, sans-serif;
+}
+
+p {
+  margin: 0;
+  padding: 1rem, 0;
+  font-family: Garamond, Baskerville, Times New Roman, serif;
+}
+
+.columns {
+    columns: 3 200px;
+    column-gap: 2rem;
+    column-rule: 1px solid hsl(360, 0%, 25%);
+}
+.columns p {
+  padding-top: 0;
+}
+
+.columns .span-heading {
+  column-span: all;
+}

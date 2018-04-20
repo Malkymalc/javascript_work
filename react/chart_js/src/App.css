@@ -1,0 +1,33 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 1.5vw;
+  margin-top: 1.5vh;
+}
+
+Header {
+  border: 1.5px dotted red;
+  margin: 0.5vh;
+  padding: none;
+  border-radius: 15px;
+}
+
+
+Main {
+  border: 1.5px dotted blue;
+  margin: 0.5vh;
+  border-radius: 15px;
+  height: 75vh;
+  overflow: hidden;
+}
+
+.bar {
+  height: 70px;
+}
+
+Footer {
+  border: 1.5px dotted green;
+  margin: 0.5vh;
+  border-radius: 15px;
+}

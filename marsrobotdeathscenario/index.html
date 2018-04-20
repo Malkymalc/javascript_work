@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link href="https://fonts.googleapis.com/css?family=Aubrey|Audiowide|Bangers|Barrio|Bungee+Hairline|Bungee+Inline|Bungee+Shade|Chelsea+Market" rel="stylesheet">
+  <link href="style.css" type="text/css" rel="stylesheet">
+
+  <script type="text/javascript" src="app.js"></script>
+
+  <title>Mars Robot Death Scenario</title>
+</head>
+
+<body>
+  <div class='background-image'></div>
+  <div class='content-wrap'>
+      <header id="header">
+        <h1 class="title primary">Mars Robot Death Scenario 42: </h1>
+      </header>
+
+      <main class='main'>
+
+        <section id="controls">
+
+          <div class="input">
+            <label for="select-scenario">Select Scenario: </label><br />
+            <select id='select-scenario' class="select" name="select-scenario">
+              <option value="a">Robot Start: 1 1 E || Robot Move: RFRFRFRF</option>
+              <option value="b">Robot Start: 3 2 N || Robot Move: FRRFLLFFRRFLL</option>
+              <option value="c">Robot Start: 0 3 W || Robot Move: LLFFFLFLFL</option>
+            </select>
+          </div>
+
+          <button id="run">Run Mars Robot Death Scenario</button>
+
+          <output id="messageBar">No Mars Robot Deaths...yet</output>
+        </section>
+
+        <section id="grid">
+
+        </section>
+
+      </main>
+
+      <footer>
+        <small>&copy; 2018 Mars Robot Death Scenario Co.</small>
+      </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 0.5rem;
+  grid-row-gap: 0.5rem;
+}
+  .grid > * {
+    background-color: hsla(360, 0%, 100%, 0.8);
+    padding: 0.5rem;
+  }
+  .grid > *:nth-child(odd) {
+    background-color: hsla(360, 0%, 70%, 0.8);
+  }
+
+
+
+.auto-cols {
+  grid-auto-columns: minmax(100px, 20%);
+}
+.auto-rows {
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.shrink-items-to-center-horiz {
+  justify-items: center;
+}
+.shrink-items-to-center-vert {
+  align-items: center;
+}
+
+/* =================================
+    GRID LAYOUTS AND TEMPLATE AREAS
+   ================================= */
+
+#header {grid-area: h;}
+#main {grid-area: m;}
+  #section-a {grid-area: a;}
+  #section-b {grid-area: b;}
+  #section-c {grid-area: c;}
+#sidebar {grid-area: s;}
+#footer {grid-area: f;}
+
+/*SOME BASIC WHOLE-PAGE LAYOUT STYLES*/
+
+@media(min-width: 700px) {
+
+  .grid {
+    grid-template-areas:
+  }
+
+}

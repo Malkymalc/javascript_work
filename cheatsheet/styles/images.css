@@ -1,0 +1,57 @@
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* =================================
+    FILTERS
+   ================================= */
+
+.blur {
+  filter: blur(10px);
+}
+.saturate {
+  filter: saturate(5);
+}
+.sepia {
+  filter: sepia(90%);
+}
+.hue-rotate {
+  filter: hue-rotate(90deg);
+}
+.grayscale {
+  filter: grayscale(50%);
+}
+.invert {
+  filter: invert(100%);
+}
+.other {
+  filter: contrast(200%);
+}
+
+/* =================================
+    CLIP
+   ================================= */
+
+   /* Great resource for creating custom
+   masking shapes in CSS3:
+   http://bennettfeely.com/clippy/ */
+
+/* create circle - 50% is max size to create perfect circle
+other two are left-right, and up-down percentage of total width for centre of circle - so 50/50 centers circle -
+top left corner is 0%/0%  */
+.clip-circle {
+  clip-path: circle(50% at 50% 50%);
+}
+
+/* To tranition between two clipped paths, both polygons
+must have same number of points, even if some are 'redundant'
+for one of the polygons */
+.clip-polygon {
+  clip-path: polygon(0 0, 10% 80%, 0 100%, 30% 75%, 20% 60%, 10% 75%, 100% 100%);
+  transition: all 0.5s ease;
+}
+  .clip-polygon:hover {
+    clip-path: polygon(0 0, 50% 50%, 0 100%, 50% 75%, 10% 80%, 50% 75%, 50% 100%);
+  }
